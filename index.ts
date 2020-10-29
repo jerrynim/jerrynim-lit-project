@@ -1,2 +1,2 @@
 import "./styles/styles.css";
-import "./pages/tomato";
+import "./pages/lit-potato";
