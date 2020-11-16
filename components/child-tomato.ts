@@ -1,18 +1,18 @@
 import { LitElement, html, customElement, property } from "lit-element";
-import "./lit-tomato";
 
-@customElement("lit-potato")
-class Potato extends LitElement {
+@customElement("child-tomato")
+class ChildTomato extends LitElement {
   render() {
     return html`
       <style></style>
-      <h1>Hello potato</h1>
+      <div>자식 :</div>
+      <slot></slot>
     `;
   }
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    "lit-potato": Potato;
+    "child-tomato": ChildTomato;
   }
 }
